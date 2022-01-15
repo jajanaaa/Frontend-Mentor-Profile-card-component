@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsla(0, 0%, 59%, 0.281);
+}
+
+body {
+  background-color: var(--dark-cyan);
+  height: 100%;
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 32vh right 50vw, bottom -81vh left 46vw;
+}
+
+.main-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  background-color: white;
+  width: 350px;
+  height: 374px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.img-card {
+  border-radius: 15px 15px 0 0;
+}
+
+.victor-avatar {
+  border-radius: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 87px;
+  border: 5px solid white;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.victor-name-age {
+  display: flex;
+  margin-top: 65px;
+  justify-content: center;
+  text-align: center;
+}
+
+.victor-name-age > h1 {
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 700;
+  font-size: 1em;
+  margin-right: 8px;
+}
+
+.victor-name-age > p {
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+}
+
+.victor-city {
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+  font-size: 0.8em;
+  margin-top: 7px;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 22px 48px;
+  margin-top: 28px;
+  line-height: 1.4;
+  border-top: solid 1px var(--dark-gray);
+}
+
+.bottom-section > div > h1 {
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.bottom-section > div > p {
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+  font-size: 0.7em;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-position: bottom 41vh right 43vw, bottom -90vh left 31vw;
+  }
+}
